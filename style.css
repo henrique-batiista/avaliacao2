@@ -1,0 +1,85 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+main {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+h2 {
+    color: #007bff;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Estilos do Formulário */
+#form-cadastro input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Inclui padding e border no width total */
+}
+
+#form-cadastro button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#form-cadastro button:hover {
+    background-color: #218838;
+}
+
+/* Estilos da Seção de Clima */
+#exibicao-clima {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#temperatura-box {
+    margin: 20px auto;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.5s ease-in-out;
+}
+
+/* Classes para Cores Condicionais */
+.temp-frio { /* Abaixo de 15°C -> Azul */
+    background-color: #007bff; 
+}
+
+.temp-ameno { /* Entre 15°C e 30°C -> Verde */
+    background-color: #28a745; 
+}
+
+.temp-quente { /* Acima de 30°C -> Vermelho */
+    background-color: #dc3545; 
+}
